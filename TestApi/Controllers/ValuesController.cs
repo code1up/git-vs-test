@@ -12,7 +12,8 @@ namespace TestApi.Controllers
         // GET api/values
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2", "value3" };
+            throw new HttpResponseException(HttpStatusCode.NotFound);
+            // return new string[] { "value1", "value2", "value3" };
         }
 
         // GET api/values/5
